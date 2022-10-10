@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+
+.bg{
+    position: absolute;
+    width: calc(100vw + 60px);
+    height: calc(100vh + 60px);
+    top: -30px;
+    left: -30px;
+    background: url('https://t1.daumcdn.net/thumb/R1000x0/?fname=https://i.imgur.com/y2sgXGw.jpg') no-repeat center/cover;
+    filter: blur(30px);
+}
+
+.loading-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    font-size: 3rem;
+}
