@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: #333;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+}
+
+.split{
+    flex-basis: 50%;
+    transition: all 1s ease;
+    text-align: center;
+}
+
+.split h1{
+    color: #fff;
+    margin-bottom: 50px;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
+.split a{
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 10px 20px;
+    z-index: 999;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.split a:hover{
+    background-color: #fff;
+    color: black;
+}
+
+.left{
+    background:url('https://cdn.pocket-lint.com/r/s/970x/assets/images/154419-games-review-hands-on-playstation-5-hands-on-pics-image1-tbq3hzlrkw.jpg') no-repeat center/cover;
+    position: relative;
+}
+
+.left::before{
+    content: '';
+    position: absolute;
+    background-color: rgba(255, 194, 194, 0.56);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.right{
+    background:url('https://images.theconversation.com/files/370001/original/file-20201118-23-yub2qv.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=1200.0&fit=crop') no-repeat center/cover;
+    position: relative;
+}
+
+.right::before{
+    content: '';
+    position: absolute;
+    background-color: rgba(50, 104, 34, 0.56);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.split.active{
+    flex-basis: 100%;
+}
